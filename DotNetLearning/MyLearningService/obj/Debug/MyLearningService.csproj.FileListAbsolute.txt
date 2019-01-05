@@ -6,12 +6,3 @@ C:\Users\Sunil\documents\visual studio 2013\Projects\DotNetLearning\MyLearningSe
 C:\Users\Sunil\documents\visual studio 2013\Projects\DotNetLearning\MyLearningService\obj\Debug\MyLearningService.exe
 C:\Users\Sunil\documents\visual studio 2013\Projects\DotNetLearning\MyLearningService\obj\Debug\MyLearningService.pdb
 C:\Users\Sunil\documents\visual studio 2013\Projects\DotNetLearning\MyLearningService\obj\Debug\MyLearningService.csprojResolveAssemblyReference.cache
-D:\Sunil\Development\MyCode\DotNetLearning\MyLearningService\bin\Debug\MyLearningService.exe.config
-D:\Sunil\Development\MyCode\DotNetLearning\MyLearningService\bin\Debug\MyLearningService.exe
-D:\Sunil\Development\MyCode\DotNetLearning\MyLearningService\bin\Debug\MyLearningService.pdb
-D:\Sunil\Development\MyCode\DotNetLearning\MyLearningService\obj\Debug\MyLearningService.csprojAssemblyReference.cache
-D:\Sunil\Development\MyCode\DotNetLearning\MyLearningService\obj\Debug\MyLearningService.ProjectInstaller.resources
-D:\Sunil\Development\MyCode\DotNetLearning\MyLearningService\obj\Debug\MyLearningService.csproj.GenerateResource.cache
-D:\Sunil\Development\MyCode\DotNetLearning\MyLearningService\obj\Debug\MyLearningService.csproj.CoreCompileInputs.cache
-D:\Sunil\Development\MyCode\DotNetLearning\MyLearningService\obj\Debug\MyLearningService.exe
-D:\Sunil\Development\MyCode\DotNetLearning\MyLearningService\obj\Debug\MyLearningService.pdb

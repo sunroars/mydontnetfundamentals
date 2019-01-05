@@ -2,9 +2,3 @@ C:\Users\Sunil\documents\visual studio 2013\Projects\DotNetLearning\ReferenceLib
 C:\Users\Sunil\documents\visual studio 2013\Projects\DotNetLearning\ReferenceLibrary\bin\Debug\ReferenceLibrary.pdb
 C:\Users\Sunil\documents\visual studio 2013\Projects\DotNetLearning\ReferenceLibrary\obj\Debug\ReferenceLibrary.dll
 C:\Users\Sunil\documents\visual studio 2013\Projects\DotNetLearning\ReferenceLibrary\obj\Debug\ReferenceLibrary.pdb
-D:\Sunil\Development\MyCode\DotNetLearning\ReferenceLibrary\bin\Debug\ReferenceLibrary.dll
-D:\Sunil\Development\MyCode\DotNetLearning\ReferenceLibrary\bin\Debug\ReferenceLibrary.pdb
-D:\Sunil\Development\MyCode\DotNetLearning\ReferenceLibrary\obj\Debug\ReferenceLibrary.csprojAssemblyReference.cache
-D:\Sunil\Development\MyCode\DotNetLearning\ReferenceLibrary\obj\Debug\ReferenceLibrary.csproj.CoreCompileInputs.cache
-D:\Sunil\Development\MyCode\DotNetLearning\ReferenceLibrary\obj\Debug\ReferenceLibrary.dll
-D:\Sunil\Development\MyCode\DotNetLearning\ReferenceLibrary\obj\Debug\ReferenceLibrary.pdb
