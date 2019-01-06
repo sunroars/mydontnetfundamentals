@@ -13,13 +13,13 @@ namespace DotNetLearning
         static void Main(string[] args)
         {
 
-            //OperatorOverloadTest();
+            OperatorOverloadTest();
 
             //StringAndBuilderPerformance();
 
             //TryToRunMutexThread();
 
-            InheritanceExample();
+            //InheritanceExample();
 
             //ValueTypeRefTypeExample();
 
@@ -48,9 +48,15 @@ namespace DotNetLearning
             Employee emp1 = new Employee() { Name = "Sunil", Salary = 6000 };
             Employee emp2 = new Employee() { Name = "Jayesh", Salary = 7000 };
 
-            Console.WriteLine("Result : " + (emp1 > emp2));
+            Console.WriteLine("GT Comparision Result : " + (emp1 > emp2));
 
             Console.WriteLine("Sum Salary : " + (emp1 + emp2).Salary);
+
+            Console.WriteLine("== Comparision Result : " + (emp1 == emp2));
+
+            Console.WriteLine("!= Comparision Result : " + (emp1 != emp2));
+
+            Console.WriteLine("equals Comparision Result : " + (emp1.Equals(emp2)));
         }
 
         static void StringAndBuilderPerformance()

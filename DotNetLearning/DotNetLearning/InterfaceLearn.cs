@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DotNetLearning
 {
-    interface InterfaceLearn :InterfaceOne,InterfaceTwo
+    interface InterfaceLearn :InterfaceOne,InterfaceTwo, InterfaceThree
     {
         void SimplestMethod(int abc);
     }
@@ -14,6 +14,8 @@ namespace DotNetLearning
     interface InterfaceOne
     {
         void SimpleMethod();
+
+        void SimpleMethod(string abc);
 
         void SimplestMethod();
     }
@@ -23,9 +25,19 @@ namespace DotNetLearning
         void SimpleMethod();
     }
 
+    interface InterfaceThree
+    {
+        void SimplestMethod(string abc);
+    }
+
     public class InterfaceImplementor : InterfaceLearn
     {
         void InterfaceOne.SimpleMethod()
+        {
+            throw new NotImplementedException();
+        }
+
+         void InterfaceOne.SimpleMethod(string abc)
         {
             throw new NotImplementedException();
         }
@@ -41,6 +53,11 @@ namespace DotNetLearning
         }
 
         public void SimplestMethod(int abc)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void SimplestMethod(string abc)
         {
             throw new NotImplementedException();
         }
