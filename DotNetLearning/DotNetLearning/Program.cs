@@ -57,6 +57,7 @@ namespace DotNetLearning
             Console.WriteLine("!= Comparision Result : " + (emp1 != emp2));
 
             Console.WriteLine("equals Comparision Result : " + (emp1.Equals(emp2)));
+
         }
 
         static void StringAndBuilderPerformance()

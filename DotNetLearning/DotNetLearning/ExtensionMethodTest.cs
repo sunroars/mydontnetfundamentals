@@ -11,5 +11,10 @@
         {
             return ((inputVal + 5) / 10);
         }
+
+        public static string Describe(this Employee emp)
+        {
+            return $"EmployeName : {emp.Name}, EmployeeSalary :{emp.Salary}";
+        }
     }
 }

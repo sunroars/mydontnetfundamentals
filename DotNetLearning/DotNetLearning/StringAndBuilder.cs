@@ -13,22 +13,22 @@ namespace DotNetLearning
         {
             Stopwatch st = new Stopwatch();
             st.Start();
-            slow();
+            Slow();
             Console.WriteLine("slow elapsed " + (st.ElapsedMilliseconds) + " ms");
 
             st.Restart();
-            fast();
+            Fast();
             Console.WriteLine("fast elapsed " + (st.ElapsedMilliseconds) + " ms");
         }
 
-        public static void fast()
+        public static void Fast()
         {
             StringBuilder s = new StringBuilder();
             for (int i = 0; i < 100000; i++)
                 s.Append("*");
         }
 
-        public static void slow()
+        public static void Slow()
         {
             String s = "";
             for (int i = 0; i < 100000; i++)
