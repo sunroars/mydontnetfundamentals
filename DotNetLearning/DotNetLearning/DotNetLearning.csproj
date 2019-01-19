@@ -47,6 +47,7 @@
     <Compile Include="EventsAndDeligate.cs" />
     <Compile Include="ExtensionMethodTest.cs" />
     <Compile Include="InterfaceLearn.cs" />
+    <Compile Include="Net 4.7.2.cs" />
     <Compile Include="OperatorOverload.cs" />
     <Compile Include="ParentClass.cs" />
     <Compile Include="Program.cs" />

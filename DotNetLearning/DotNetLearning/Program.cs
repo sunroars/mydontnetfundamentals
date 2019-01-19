@@ -13,7 +13,7 @@ namespace DotNetLearning
         static void Main(string[] args)
         {
 
-            OperatorOverloadTest();
+            //OperatorOverloadTest();
 
             //StringAndBuilderPerformance();
 
@@ -34,6 +34,10 @@ namespace DotNetLearning
             //ThreadEventExample();
 
             //ConstReadonlyExample();
+
+            //DotNet472DiscardExample();
+
+            DotNet472PatternMatchingExample();
 
             //Console.WriteLine("Return Value : " + CoalesceAndTernaryOperator());
 
@@ -251,6 +255,35 @@ namespace DotNetLearning
         }
 
         #endregion
-    }
 
-}
+        #region DotNet 4.7.2 Features
+
+        public static void DotNet472DiscardExample()
+        {
+            DotNet472 dn472 = new DotNet472();
+            dn472.PerformAddSubDevide(10, 2, out int add, out int sub, out int del);
+            Console.WriteLine($"Add 1 : {add}");
+
+            dn472.PerformAddSubDevide(10, 2, out int addRes, out int _, out int _);
+            Console.WriteLine($"Add 2 : {addRes}");
+
+            dn472.PerformAddSubDevide(10, 2, out int addOnly, out _, out _);
+            Console.WriteLine($"Add 3 : {addOnly}");
+        }
+
+        public static void DotNet472PatternMatchingExample()
+        {
+            DotNet472 dn472 = new DotNet472();
+            dn472.PrintObjectValue(10);
+            dn472.PrintObjectValue(new Employee() { Name = "Sunil", Salary = 5000 });
+            dn472.PrintObjectValue(10.12345M);
+            dn472.PrintObjectValue("Hello World");
+
+        }
+
+
+            #endregion
+
+        }
+
+    }
