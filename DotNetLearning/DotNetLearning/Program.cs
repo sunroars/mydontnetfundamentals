@@ -12,6 +12,9 @@ namespace DotNetLearning
     {
         static void Main(string[] args)
         {
+            ShowNumbersUsingDelegateExample();
+
+            //TrainDelegateExaple();
 
             //OperatorOverloadTest();
 
@@ -37,7 +40,7 @@ namespace DotNetLearning
 
             //DotNet472DiscardExample();
 
-            DotNet472PatternMatchingExample();
+            //DotNet472PatternMatchingExample();
 
             //Console.WriteLine("Return Value : " + CoalesceAndTernaryOperator());
 
@@ -45,6 +48,15 @@ namespace DotNetLearning
 
             Console.ReadKey();
 
+        }
+
+        static void ShowNumbersUsingDelegateExample()
+        {
+            ShowNumbersUsingDelegate snd = new ShowNumbersUsingDelegate();
+
+            IEnumerable<int> listResult1 = snd.ReturnNumbersBasedOnCondition(snd.numberList, delegate(int num){return num > 5;});
+            IEnumerable<int> listResult2 = snd.ReturnNumbersBasedOnCondition(snd.numberList, delegate (int num) { return num > 25; });
+            IEnumerable<int> listResult3 = snd.ReturnNumbersBasedOnCondition(snd.numberList, delegate (int num) { return num > 50; });
         }
 
         static void OperatorOverloadTest()
@@ -218,6 +230,17 @@ namespace DotNetLearning
             objEnD.ApplyMyAdditionLogic(AddNumbers);
         }
 
+        static void TrainDelegateExaple()
+        {
+            TrainSignalDelegate tsd = new TrainSignalDelegate();
+            new Vehicle(tsd);
+            new Truck(tsd);
+            new Bike(tsd);
+            new Vehicle(tsd);
+            new Vehicle(tsd);
+            tsd.HereComesTheTarin();
+        }
+
         static int AddNumbers(int abc, int def)
         {
             Console.WriteLine("Sum is :" + (abc + def));
@@ -282,8 +305,8 @@ namespace DotNetLearning
         }
 
 
-            #endregion
-
-        }
+        #endregion
 
     }
+
+}
