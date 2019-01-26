@@ -1,5 +1,6 @@
 ﻿using Converter;
 using System;
+using System.Collections.Generic;
 
 namespace NunitTestingSample
 {
@@ -11,10 +12,15 @@ namespace NunitTestingSample
 
             Console.WriteLine("Hello World!");
 
-            for (int counter = 0; counter < 100; counter++)
+            FizzBuzzDataRepo drepo = new FizzBuzzDataRepo();
+
+            List<int> testData = drepo.GetFizzBuzzTestData();
+
+            foreach (int counter in testData)
             {
                 Console.WriteLine($"Value of Counter : {convert.GetConvertedValue(counter)}");
             }
+
             Console.ReadKey();
         }
     }

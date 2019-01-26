@@ -1,5 +1,8 @@
 using Converter;
+using Moq;
 using NUnit.Framework;
+using NunitTestingSample;
+using System.Collections.Generic;
 
 namespace Tests
 {
@@ -49,6 +52,19 @@ namespace Tests
             FizzBuzzConverter converter = new FizzBuzzConverter();
             string output = converter.GetConvertedValue(inputVal);
             Assert.AreNotEqual("FizzBuzz", output);
+        }
+
+        [Test]
+        public void TestFizzBuzzUsinMock()
+        {
+            //Ideally thi sis coming from DB but we will just mock.
+            List<int> listOfTestData = new List<int>() { 15, 30, 45, 75 };
+
+            Mock<IFizzBuzzDataRepo> mockRepo = new Mock<IFizzBuzzDataRepo>();
+            mockRepo.Setup(X => X.GetFizzBuzzTestData()).Returns(listOfTestData);
+            FizzBuzzConverter converter = new FizzBuzzConverter();
+            List<string> outputValues = converter.GetConvertedValues(mockRepo.Object);
+
         }
     }
 }
